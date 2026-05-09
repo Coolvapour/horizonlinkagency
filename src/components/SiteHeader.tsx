@@ -16,16 +16,6 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false);
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/60 bg-background/80 backdrop-blur-md">
-      <div className="bg-navy-deep text-[11px] text-white/90">
-        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-x-6 gap-y-1 px-4 py-1.5 text-center sm:justify-between sm:px-6 lg:px-8">
-          <span className="font-medium tracking-wide text-gold">
-            ANNOUNCEMENT: 2026 September intake applications now open — limited scholarship slots.
-          </span>
-          <span className="hidden sm:inline">
-            📧 info@horizonlinkagency.com · ☎ +254 722 496 897 · ☎ +254 728 444 030
-          </span>
-        </div>
-      </div>
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         <Link to="/" className="flex items-center gap-3">
           <img src={logo} alt="Horizon Link Agency" className="h-10 w-10 rounded-md" />
