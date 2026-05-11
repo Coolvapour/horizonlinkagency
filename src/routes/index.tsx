@@ -21,11 +21,31 @@ import { GraduationCap, Briefcase, Globe2, ShieldCheck, ArrowRight, Plane } from
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Horizon Link Agency — By Grace, From Sacrifice to Success" },
-      { name: "description", content: "Trusted study abroad and skilled migration agency empowering African families to access global opportunities. God First. Legacy Always." },
-      { property: "og:title", content: "Horizon Link Agency — Migration & Education" },
+      { title: "Horizon Link Agency — Study Abroad & Migration Consultancy in Kenya" },
+      { name: "description", content: "Trusted study abroad, scholarships, student visas & skilled migration to Canada, UK, USA, Australia, Europe & Asia. Eldoret-based agency for African families." },
+      { property: "og:title", content: "Horizon Link Agency — Study Abroad & Skilled Migration" },
       { property: "og:description", content: "From Sacrifice to Success — global study and migration pathways for African families." },
+      { property: "og:url", content: "https://horizonlinkagency.com/" },
       { property: "og:image", content: "/students-graduation.jpg" },
+    ],
+    links: [{ rel: "canonical", href: "https://horizonlinkagency.com/" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          name: "Horizon Link Agency",
+          image: "https://horizonlinkagency.com/students-graduation.jpg",
+          "@id": "https://horizonlinkagency.com/",
+          url: "https://horizonlinkagency.com/",
+          telephone: "+254722496897",
+          email: "info@horizonlinkagency.com",
+          priceRange: "$$",
+          address: { "@type": "PostalAddress", addressLocality: "Eldoret", addressCountry: "KE" },
+          description: "Study abroad and skilled migration consultancy serving African families.",
+        }),
+      },
     ],
   }),
   component: Home,

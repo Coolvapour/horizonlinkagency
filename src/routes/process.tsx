@@ -42,18 +42,12 @@ export const Route = createFileRoute("/process")({
   head: () => ({
     meta: [
       { title: "Our Process — From Zero to Abroad | Horizon Link Agency" },
-      {
-        name: "description",
-        content:
-          "Our 4-step pathway: digital readiness, university admissions, visa & travel, and arrival support. We guide every step from sacrifice to success.",
-      },
+      { name: "description", content: "Our 4-step pathway: digital readiness, university admissions, visa & travel, and arrival support. We guide every step from sacrifice to success." },
       { property: "og:title", content: "From Zero to Abroad — Our 4-Step Process" },
-      {
-        property: "og:description",
-        content:
-          "Step-by-step guidance from foundation building to landing safely in your new country.",
-      },
+      { property: "og:description", content: "Step-by-step guidance from foundation building to landing safely in your new country." },
+      { property: "og:url", content: "https://horizonlinkagency.com/process" },
     ],
+    links: [{ rel: "canonical", href: "https://horizonlinkagency.com/process" }],
   }),
   component: ProcessPage,
 });
