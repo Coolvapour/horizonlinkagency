@@ -57,12 +57,25 @@ function ContactPage() {
     }
   }
 
-  const details: { icon: typeof Phone; label: string; value: string; href?: string }[] = [
-    { icon: Phone, label: "Phone / WhatsApp", value: "+254 722 496 897", href: "tel:+254722496897" },
-    { icon: Phone, label: "Secondary Phone", value: SECONDARY_PHONE_DISPLAY, href: `tel:${SECONDARY_PHONE_LINK}` },
-    { icon: Mail, label: "Email", value: "info@horizonlinkagency.com", href: "mailto:info@horizonlinkagency.com" },
-    { icon: Clock, label: "Hours", value: "Mon – Fri · 9:00 – 17:00" },
-    { icon: MapPin, label: "Location", value: "Next to Ukerio Motors, Opposite Mediheal Hospital, Along Eldoret-Nakuru Highway, Eldoret" },
+  const details: { icon: typeof Phone; label: string; lines: { value: string; href?: string }[] }[] = [
+    {
+      icon: Phone,
+      label: "Director — Jonathan K. Kiplagat",
+      lines: [
+        { value: "+254 722 496 897 (Call / WhatsApp)", href: "tel:+254722496897" },
+        { value: "jonathankiplagat@horizonlinkagency.com", href: "mailto:jonathankiplagat@horizonlinkagency.com" },
+      ],
+    },
+    {
+      icon: Mail,
+      label: "Office — General Inquiries",
+      lines: [
+        { value: `${SECONDARY_PHONE_DISPLAY} (Call / WhatsApp)`, href: `tel:${SECONDARY_PHONE_LINK}` },
+        { value: "info@horizonlinkagency.com", href: "mailto:info@horizonlinkagency.com" },
+      ],
+    },
+    { icon: Clock, label: "Hours", lines: [{ value: "Mon – Fri · 9:00 – 17:00" }] },
+    { icon: MapPin, label: "Location", lines: [{ value: "Next to Ukerio Motors, Opposite Mediheal Hospital, Along Eldoret-Nakuru Highway, Eldoret" }] },
   ];
 
   return (
