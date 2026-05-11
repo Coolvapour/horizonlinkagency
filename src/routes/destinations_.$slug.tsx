@@ -13,18 +13,18 @@ export const Route = createFileRoute("/destinations_/$slug")({
   head: ({ loaderData }) => {
     const d = loaderData?.dest;
     if (!d) return { meta: [{ title: "Destination — Horizon Link Agency" }] };
+    const url = `https://horizonlinkagency.com/destinations/${d.slug}`;
     return {
       meta: [
         { title: `Study in ${d.name} — Top Universities | Horizon Link Agency` },
-        {
-          name: "description",
-          content: `Explore reputable universities in ${d.name} for international students across engineering, business, IT, medicine and more.`,
-        },
+        { name: "description", content: `Explore reputable universities in ${d.name} for international students across engineering, business, IT, medicine and more.` },
         { property: "og:title", content: `Study in ${d.name} — Top Universities` },
         { property: "og:description", content: d.blurb },
+        { property: "og:url", content: url },
         { property: "og:image", content: d.image },
         { property: "twitter:image", content: d.image },
       ],
+      links: [{ rel: "canonical", href: url }],
     };
   },
   errorComponent: ({ error }) => (
