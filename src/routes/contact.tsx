@@ -9,11 +9,13 @@ import { Toaster } from "@/components/ui/sonner";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Us — Horizon Link Agency" },
-      { name: "description", content: "Book a free consultation with our migration and education advisors. We're here to guide your family from sacrifice to success." },
+      { title: "Contact Horizon Link Agency — Free Migration & Study Consultation" },
+      { name: "description", content: "Book a free consultation with Horizon Link Agency. Call +254 722 496 897 or email info@horizonlinkagency.com — Eldoret, Kenya." },
       { property: "og:title", content: "Contact Horizon Link Agency" },
-      { property: "og:description", content: "Reach our team and start your global journey today." },
+      { property: "og:description", content: "Reach our team and start your global study or migration journey today." },
+      { property: "og:url", content: "https://horizonlinkagency.com/contact" },
     ],
+    links: [{ rel: "canonical", href: "https://horizonlinkagency.com/contact" }],
   }),
   component: ContactPage,
 });
