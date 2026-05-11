@@ -7,19 +7,13 @@ import { destinations } from "@/data/destinations";
 export const Route = createFileRoute("/destinations")({
   head: () => ({
     meta: [
-      { title: "Study Destinations — Horizon Link Agency" },
-      {
-        name: "description",
-        content:
-          "Explore study and work destinations: Canada, UK, USA, Australia, Germany, Ireland, Dubai, Malaysia, Malta and Qatar — with curated university lists per field of study.",
-      },
+      { title: "Study Destinations — Canada, UK, USA, Australia & More | Horizon Link Agency" },
+      { name: "description", content: "Explore study and work destinations: Canada, UK, USA, Australia, Germany, Ireland, Dubai, Malaysia, Malta and Qatar — curated universities by field of study." },
       { property: "og:title", content: "A World of Opportunity — Our Destinations" },
-      {
-        property: "og:description",
-        content:
-          "From North America to the Gulf, Europe and Asia — pathways to over 300 universities across 25+ countries.",
-      },
+      { property: "og:description", content: "From North America to the Gulf, Europe and Asia — pathways to over 300 universities across 25+ countries." },
+      { property: "og:url", content: "https://horizonlinkagency.com/destinations" },
     ],
+    links: [{ rel: "canonical", href: "https://horizonlinkagency.com/destinations" }],
   }),
   component: DestinationsPage,
 });
