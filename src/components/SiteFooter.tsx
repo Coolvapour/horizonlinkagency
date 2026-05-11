@@ -35,17 +35,16 @@ export function SiteFooter() {
             <h4 className="text-sm font-semibold uppercase tracking-wider text-gold">
               Contact
             </h4>
-            <ul className="mt-4 space-y-2 text-sm text-white/80">
+            <ul className="mt-4 space-y-4 text-sm text-white/80">
               <li>
-                <a href="tel:+254722496897" className="hover:text-gold">+254 722 496 897</a>
-                <span className="ml-2 text-xs text-gold">(Call / WhatsApp)</span>
+                <div className="text-xs uppercase tracking-wider text-gold/80">Director — Jonathan K. Kiplagat</div>
+                <a href="tel:+254722496897" className="mt-1 block hover:text-gold">+254 722 496 897</a>
+                <a href="mailto:jonathankiplagat@horizonlinkagency.com" className="block hover:text-gold">jonathankiplagat@horizonlinkagency.com</a>
               </li>
               <li>
-                <a href="tel:+254728444030" className="hover:text-gold">0728 444 030</a>
-                <span className="ml-2 text-xs text-gold">(Secondary line)</span>
-              </li>
-              <li>
-                <a href="mailto:info@horizonlinkagency.com" className="hover:text-gold">info@horizonlinkagency.com</a>
+                <div className="text-xs uppercase tracking-wider text-gold/80">Office</div>
+                <a href="tel:+254728444030" className="mt-1 block hover:text-gold">0728 444 030</a>
+                <a href="mailto:info@horizonlinkagency.com" className="block hover:text-gold">info@horizonlinkagency.com</a>
               </li>
             </ul>
           </div>
