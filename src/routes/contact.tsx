@@ -99,18 +99,22 @@ function ContactPage() {
           <div className="md:col-span-2">
             <h2 className="font-display text-3xl text-navy">Reach our team</h2>
             <ul className="mt-8 space-y-6">
-              {details.map(({ icon: Icon, label, value, href }) => (
+              {details.map(({ icon: Icon, label, lines }) => (
                 <li key={label} className="flex gap-4">
                   <div className="flex h-11 w-11 flex-none items-center justify-center rounded-full bg-gold/15 text-navy">
                     <Icon className="h-5 w-5" />
                   </div>
                   <div>
                     <div className="text-xs font-semibold uppercase tracking-wider text-gold">{label}</div>
-                    {href ? (
-                      <a href={href} className="mt-1 block text-foreground hover:text-navy">{value}</a>
-                    ) : (
-                      <div className="mt-1 text-foreground">{value}</div>
-                    )}
+                    <div className="mt-1 space-y-1">
+                      {lines.map((l) =>
+                        l.href ? (
+                          <a key={l.value} href={l.href} className="block text-foreground hover:text-navy">{l.value}</a>
+                        ) : (
+                          <div key={l.value} className="text-foreground">{l.value}</div>
+                        )
+                      )}
+                    </div>
                   </div>
                 </li>
               ))}
