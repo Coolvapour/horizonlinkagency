@@ -64,7 +64,7 @@ export const Route = createRootRoute({
           "@type": "Organization",
           name: "Horizon Link Agency",
           url: "https://horizonlinkagency.com",
-          logo: "https://horizonlinkagency.com/favicon.ico",
+          logo: "https://horizonlinkagency.com/favicon-512.png",
           founder: { "@type": "Person", name: "Jonathan K. Kiplagat" },
           slogan: "By Grace, From Sacrifice to Success.",
           email: "info@horizonlinkagency.com",
