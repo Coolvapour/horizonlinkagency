@@ -134,6 +134,26 @@ function ServicesPage() {
         </section>
       ))}
 
+      <section className="py-20">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold">FAQ</p>
+            <h2 className="mt-3 font-display text-4xl text-navy sm:text-5xl">Common questions</h2>
+            <p className="mt-3 text-muted-foreground">Quick answers about study abroad and skilled migration with Horizon Link.</p>
+          </div>
+          <dl className="mt-10 space-y-4">
+            {SERVICES_FAQS.map((f) => (
+              <details key={f.q} className="group rounded-2xl border border-border bg-card p-6 open:shadow-elegant">
+                <summary className="cursor-pointer list-none font-display text-lg text-navy marker:hidden">
+                  {f.q}
+                </summary>
+                <dd className="mt-3 text-sm text-muted-foreground">{f.a}</dd>
+              </details>
+            ))}
+          </dl>
+        </div>
+      </section>
+
       <section className="bg-secondary py-20">
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
           <h2 className="font-display text-4xl text-navy sm:text-5xl">Ready to begin?</h2>
@@ -153,3 +173,38 @@ function ServicesPage() {
     </div>
   );
 }
+
+const SERVICES_FAQS = [
+  {
+    q: "How much does it cost to study abroad through Horizon Link Agency?",
+    a: "Initial consultations are free. Service fees depend on the destination country and the package you choose (admissions only, full visa support, or end-to-end with settlement). Tuition and living costs vary by country — for example, Germany has very low public tuition, while Canada, the UK, USA and Australia range from roughly USD 12,000 to USD 45,000 per year. We give you a transparent written quote before you commit.",
+  },
+  {
+    q: "Which countries can you place students and skilled workers in?",
+    a: "We currently support 10 destinations: Canada, United Kingdom, United States, Australia, Germany, Ireland, Dubai (UAE), Malaysia, Malta and Qatar — covering both study abroad and skilled migration pathways.",
+  },
+  {
+    q: "Do you help with scholarships?",
+    a: "Yes. We actively identify scholarships, grants and tuition discounts you qualify for and help you build a competitive application — personal statement, references and supporting documents included.",
+  },
+  {
+    q: "What documents do I need to start a student visa application?",
+    a: "Typically: a valid passport, academic transcripts and certificates, English proficiency results (IELTS/TOEFL where required), proof of funds, statement of purpose and your admission letter. We give you a personalised checklist after your first consultation.",
+  },
+  {
+    q: "Can I work while studying abroad?",
+    a: "In most of our destinations — Canada, UK, Australia, Ireland, Germany, Malta — yes. Students are typically allowed 20 hours per week during semester and full-time during breaks. Specific rules vary by country and visa type, and we walk you through them in detail.",
+  },
+  {
+    q: "What is the difference between a study visa and skilled migration?",
+    a: "A study visa lets you enrol in a recognised institution abroad, often with the right to work part-time and apply for post-study work permits. Skilled migration is for qualified professionals (nurses, engineers, IT, trades, etc.) moving abroad to work directly, usually through points-based systems like Canada Express Entry or the UK Skilled Worker visa.",
+  },
+  {
+    q: "How long does the whole process take?",
+    a: "From first consultation to boarding the plane, most students take 3–9 months depending on intake dates and visa processing times. Skilled migration cases (Canada Express Entry, UK Skilled Worker) typically take 6–12 months. We give you a realistic timeline at the start.",
+  },
+  {
+    q: "Do you support the family after the student arrives abroad?",
+    a: "Yes. Our Pre-Departure & Settlement service includes airport pickup arrangements, accommodation guidance, orientation and a direct line back to our Eldoret office whenever the student or family needs support.",
+  },
+];
