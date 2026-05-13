@@ -133,7 +133,55 @@ function AboutPage() {
         </div>
       </section>
 
+      <FAQSection />
+
       <SiteFooter />
     </div>
+  );
+}
+
+const ABOUT_FAQS = [
+  {
+    q: "Who founded Horizon Link Agency?",
+    a: "Horizon Link Agency was founded by Jonathan K. Kiplagat, who serves as Founder & Director. The agency is based in Eldoret, Kenya, and was built to help African families turn parental sacrifice into global opportunity for their children.",
+  },
+  {
+    q: "What does Horizon Link Agency actually do?",
+    a: "We are a faith-driven study abroad and skilled migration consultancy. We guide students and skilled professionals through university admissions, scholarships, student visas, work permits, job placement and settlement support across 10+ destination countries.",
+  },
+  {
+    q: "Is Horizon Link Agency a registered Kenyan company?",
+    a: "Yes. Horizon Link Agency is a Kenyan-registered consultancy headquartered in Eldoret. Our director, Jonathan K. Kiplagat, signs all official documentation, contracts and reference letters.",
+  },
+  {
+    q: "What does \"By Grace, From Sacrifice to Success\" mean?",
+    a: "It is our promise to every family we serve. We believe African parents make extraordinary sacrifices, and our role is to convert those sacrifices into real, measurable success — admission letters, visas, jobs and graduations — by God's grace.",
+  },
+  {
+    q: "Do I have to be a Christian to work with Horizon Link Agency?",
+    a: "No. While our values are faith-driven, we serve families of every faith and background with the same integrity, honesty and commitment to results.",
+  },
+];
+
+function FAQSection() {
+  return (
+    <section className="py-20">
+      <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <div className="text-center">
+          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold">FAQ</p>
+          <h2 className="mt-3 font-display text-4xl text-navy sm:text-5xl">About Horizon Link</h2>
+        </div>
+        <dl className="mt-10 space-y-4">
+          {ABOUT_FAQS.map((f) => (
+            <details key={f.q} className="group rounded-2xl border border-border bg-card p-6 open:shadow-elegant">
+              <summary className="cursor-pointer list-none font-display text-lg text-navy marker:hidden">
+                {f.q}
+              </summary>
+              <dd className="mt-3 text-sm text-muted-foreground">{f.a}</dd>
+            </details>
+          ))}
+        </dl>
+      </div>
+    </section>
   );
 }
