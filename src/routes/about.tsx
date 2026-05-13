@@ -18,6 +18,32 @@ export const Route = createFileRoute("/about")({
       { property: "og:image", content: "https://horizonlinkagency.com/students-graduation.jpg" },
     ],
     links: [{ rel: "canonical", href: "https://horizonlinkagency.com/about" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "@id": "https://horizonlinkagency.com/#organization",
+          name: "Horizon Link Agency",
+          url: "https://horizonlinkagency.com/",
+          logo: "https://horizonlinkagency.com/favicon.ico",
+          image: "https://horizonlinkagency.com/students-graduation.jpg",
+          description: "Faith-driven study abroad and skilled migration consultancy based in Eldoret, Kenya, founded by Jonathan K. Kiplagat to serve African families.",
+          slogan: "By Grace, From Sacrifice to Success.",
+          founder: { "@type": "Person", name: "Jonathan K. Kiplagat", jobTitle: "Founder & Director" },
+          foundingLocation: { "@type": "Place", name: "Eldoret, Kenya" },
+          email: "info@horizonlinkagency.com",
+          telephone: "+254722496897",
+          address: { "@type": "PostalAddress", addressLocality: "Eldoret", addressCountry: "KE" },
+          contactPoint: [
+            { "@type": "ContactPoint", telephone: "+254722496897", contactType: "customer service", email: "info@horizonlinkagency.com", areaServed: "KE", availableLanguage: ["English", "Swahili"] },
+            { "@type": "ContactPoint", telephone: "+254728444030", contactType: "customer service", areaServed: "KE", availableLanguage: ["English", "Swahili"] },
+          ],
+          areaServed: ["KE", "UG", "TZ", "RW", "ET", "Africa"],
+        }),
+      },
+    ],
   }),
   component: AboutPage,
 });
