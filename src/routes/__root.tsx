@@ -33,6 +33,7 @@ export const Route = createRootRoute({
       { name: "googlebot", content: "index, follow" },
       { name: "theme-color", content: "#0A1F44" },
       { name: "author", content: "Horizon Link Agency" },
+      { name: "google-site-verification", content: "Kuf2iM9SnpwNpVgeWUDbrb36LXExXgUlv-qzfWWPTnY" },
       { name: "keywords", content: "study abroad agency Kenya, migration consultancy, student visa Kenya, scholarships abroad, skilled worker visa, work permit, university admissions abroad, study in Canada, study in UK, study in USA, study in Australia, study in Germany, Eldoret education agency, Horizon Link Agency, Jonathan Kiplagat" },
       { title: "Horizon Link Agency — Migration & Education" },
       { name: "description", content: "Trusted study abroad and skilled migration pathways for African families." },
