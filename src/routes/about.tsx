@@ -43,6 +43,19 @@ export const Route = createFileRoute("/about")({
           areaServed: ["KE", "UG", "TZ", "RW", "ET", "Africa"],
         }),
       },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "@id": "https://horizonlinkagency.com/about#faq",
+          mainEntity: ABOUT_FAQS.map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: f.a },
+          })),
+        }),
+      },
     ],
   }),
   component: AboutPage,
