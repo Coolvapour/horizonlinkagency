@@ -84,6 +84,7 @@ function Hero() {
             <span className="text-gold">From Sacrifice</span>
             <br />
             to Success.
+            <span className="sr-only"> — Study Abroad & Migration Consultancy</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg text-white/80">
             We turn the sacrifices of African parents into global opportunities for
@@ -125,7 +126,7 @@ function Pillars() {
               <Icon className="h-6 w-6" />
             </div>
             <div>
-              <h3 className="font-display text-xl text-navy">{title}</h3>
+              <h2 className="font-display text-xl text-navy">{title}</h2>
               <p className="mt-1 text-sm text-muted-foreground">{text}</p>
             </div>
           </div>
