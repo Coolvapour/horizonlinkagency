@@ -13,6 +13,55 @@ export const Route = createFileRoute("/services")({
       { property: "og:url", content: "https://horizonlinkagency.com/services" },
     ],
     links: [{ rel: "canonical", href: "https://horizonlinkagency.com/services" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify([
+          {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "@id": "https://horizonlinkagency.com/services#study-abroad",
+            name: "Study Abroad & Education",
+            serviceType: "Study Abroad Consultancy",
+            description: "University admissions, scholarships, student visas, pre-departure briefings and settlement support for African students pursuing global education.",
+            provider: { "@type": "Organization", "@id": "https://horizonlinkagency.com/#organization", name: "Horizon Link Agency", url: "https://horizonlinkagency.com/" },
+            areaServed: ["KE", "UG", "TZ", "RW", "ET", "Africa"],
+            availableChannel: { "@type": "ServiceChannel", serviceUrl: "https://horizonlinkagency.com/services", servicePhone: "+254722496897" },
+            hasOfferCatalog: {
+              "@type": "OfferCatalog",
+              name: "Study Abroad Services",
+              itemListElement: [
+                { "@type": "Offer", itemOffered: { "@type": "Service", name: "University Admissions" } },
+                { "@type": "Offer", itemOffered: { "@type": "Service", name: "Scholarships & Funding" } },
+                { "@type": "Offer", itemOffered: { "@type": "Service", name: "Student Visas" } },
+                { "@type": "Offer", itemOffered: { "@type": "Service", name: "Pre-Departure & Settlement" } },
+              ],
+            },
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "@id": "https://horizonlinkagency.com/services#skilled-migration",
+            name: "Work & Skilled Migration",
+            serviceType: "Skilled Migration Consultancy",
+            description: "Skilled worker visas, work permits, job placement assistance and relocation support for professionals seeking careers abroad.",
+            provider: { "@type": "Organization", "@id": "https://horizonlinkagency.com/#organization", name: "Horizon Link Agency", url: "https://horizonlinkagency.com/" },
+            areaServed: ["KE", "UG", "TZ", "RW", "ET", "Africa"],
+            availableChannel: { "@type": "ServiceChannel", serviceUrl: "https://horizonlinkagency.com/services", servicePhone: "+254722496897" },
+            hasOfferCatalog: {
+              "@type": "OfferCatalog",
+              name: "Skilled Migration Services",
+              itemListElement: [
+                { "@type": "Offer", itemOffered: { "@type": "Service", name: "Skilled Worker Visas" } },
+                { "@type": "Offer", itemOffered: { "@type": "Service", name: "Work Permits" } },
+                { "@type": "Offer", itemOffered: { "@type": "Service", name: "Job Placement Assistance" } },
+                { "@type": "Offer", itemOffered: { "@type": "Service", name: "Relocation Support" } },
+              ],
+            },
+          },
+        ]),
+      },
+    ],
   }),
   component: ServicesPage,
 });
