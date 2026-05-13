@@ -1,0 +1,26 @@
+# Horizon Link Agency
+
+> Faith-driven study abroad and skilled migration consultancy based in Eldoret, Kenya, helping African families access global education and work opportunities.
+
+Horizon Link Agency, founded by Jonathan K. Kiplagat, guides students and skilled professionals through university admissions, scholarships, student visas, work permits and settlement support across 25+ destination countries. Motto: "By Grace, From Sacrifice to Success."
+
+## Pages
+
+- [Home](/): Overview of services, destinations and the Horizon Link journey.
+- [About](/about): Story, mission, vision and values of the agency.
+- [Services](/services): Study abroad and skilled migration service catalogue.
+- [Destinations](/destinations): All 10 study and work destinations.
+- [Contact](/contact): Phones, email, office location and inquiry form.
+
+## Destinations
+
+- [Canada](/destinations/canada): Universities and PGWP/PR pathways.
+- [United Kingdom](/destinations/united-kingdom): Russell Group and Graduate Route visa.
+- [United States](/destinations/united-states): Ivy League, STEM OPT and scholarships.
+- [Australia](/destinations/australia): Group of Eight and skilled migration.
+- [Germany](/destinations/germany): Low-tuition public universities and EU Blue Card.
+- [Ireland](/destinations/ireland): Tech sector and 2-year stay back.
+- [Dubai](/destinations/dubai): Tax-free careers and global branch campuses.
+- [Malaysia](/destinations/malaysia): Affordable English-taught and twinning degrees.
+- [Malta](/destinations/malta): English-speaking EU member with Schengen access.
+- [Qatar](/destinations/qatar): Education City and tax-free job market.

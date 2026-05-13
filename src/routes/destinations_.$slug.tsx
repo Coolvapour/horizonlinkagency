@@ -14,6 +14,9 @@ export const Route = createFileRoute("/destinations_/$slug")({
     const d = loaderData?.dest;
     if (!d) return { meta: [{ title: "Destination — Horizon Link Agency" }] };
     const url = `https://horizonlinkagency.com/destinations/${d.slug}`;
+    const universities = d.groups.flatMap((g) =>
+      g.universities.map((u) => ({ name: u.name, city: u.city, field: g.field })),
+    );
     return {
       meta: [
         { title: `Study in ${d.name} — Top Universities | Horizon Link Agency` },
@@ -25,6 +28,31 @@ export const Route = createFileRoute("/destinations_/$slug")({
         { property: "twitter:image", content: d.image },
       ],
       links: [{ rel: "canonical", href: url }],
+      scripts: [
+        {
+          type: "application/ld+json",
+          children: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            name: `Study in ${d.name} — Top Universities`,
+            description: d.overview,
+            url,
+            mainEntity: {
+              "@type": "ItemList",
+              itemListElement: universities.map((u, i) => ({
+                "@type": "ListItem",
+                position: i + 1,
+                item: {
+                  "@type": "CollegeOrUniversity",
+                  name: u.name,
+                  address: { "@type": "PostalAddress", addressLocality: u.city },
+                  description: `${u.field} — located in ${u.city}.`,
+                },
+              })),
+            },
+          }),
+        },
+      ],
     };
   },
   errorComponent: ({ error }) => (
