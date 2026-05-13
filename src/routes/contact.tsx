@@ -9,7 +9,7 @@ import { Toaster } from "@/components/ui/sonner";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Horizon Link Agency — Free Migration & Study Consultation" },
+      { title: "Contact Horizon Link Agency — Free Consultation" },
       { name: "description", content: "Book a free consultation with Horizon Link Agency. Call +254 722 496 897 or email info@horizonlinkagency.com — Eldoret, Kenya." },
       { property: "og:title", content: "Contact Horizon Link Agency" },
       { property: "og:description", content: "Reach our team and start your global study or migration journey today." },
@@ -133,8 +133,8 @@ function ContactPage() {
               <Field label="Email" name="email" type="email" required />
               <Field label="Phone" name="phone" type="tel" />
               <div>
-                <label className="text-xs font-semibold uppercase tracking-wider text-navy">Service of Interest</label>
-                <select name="service" className="mt-2 w-full rounded-md border border-input bg-background px-3 py-2.5 text-sm focus:border-gold focus:outline-none focus:ring-1 focus:ring-gold">
+                <label htmlFor="contact-service" className="text-xs font-semibold uppercase tracking-wider text-navy">Service of Interest</label>
+                <select id="contact-service" name="service" className="mt-2 w-full rounded-md border border-input bg-background px-3 py-2.5 text-sm focus:border-gold focus:outline-none focus:ring-1 focus:ring-gold">
                   <option>Study Abroad & Education</option>
                   <option>Work & Skilled Migration</option>
                   <option>Not sure yet</option>
@@ -142,8 +142,8 @@ function ContactPage() {
               </div>
             </div>
             <div className="mt-5">
-              <label className="text-xs font-semibold uppercase tracking-wider text-navy">How can we help?</label>
-              <textarea name="message" rows={5} required className="mt-2 w-full rounded-md border border-input bg-background px-3 py-2.5 text-sm focus:border-gold focus:outline-none focus:ring-1 focus:ring-gold" />
+              <label htmlFor="contact-message" className="text-xs font-semibold uppercase tracking-wider text-navy">How can we help?</label>
+              <textarea id="contact-message" name="message" rows={5} required className="mt-2 w-full rounded-md border border-input bg-background px-3 py-2.5 text-sm focus:border-gold focus:outline-none focus:ring-1 focus:ring-gold" />
             </div>
 
             <div className="mt-6">
@@ -203,10 +203,12 @@ function ContactPage() {
 }
 
 function Field({ label, name, type = "text", required }: { label: string; name: string; type?: string; required?: boolean }) {
+  const id = `contact-${name}`;
   return (
     <div>
-      <label className="text-xs font-semibold uppercase tracking-wider text-navy">{label}</label>
+      <label htmlFor={id} className="text-xs font-semibold uppercase tracking-wider text-navy">{label}</label>
       <input
+        id={id}
         name={name}
         type={type}
         required={required}

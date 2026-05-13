@@ -8,7 +8,7 @@ export function SiteFooter() {
         <div className="grid gap-10 md:grid-cols-4">
           <div className="md:col-span-2">
             <div className="flex items-center gap-3">
-              <img src={logo} alt="Logo" className="h-12 w-12 rounded-md" />
+              <img src={logo} alt="Horizon Link Agency logo" className="h-12 w-12 rounded-md" />
               <div>
                 <div className="font-display text-xl">Horizon Link Agency</div>
                 <div className="text-xs uppercase tracking-[0.2em] text-gold">
@@ -22,9 +22,9 @@ export function SiteFooter() {
             <p className="mt-2 text-sm text-gold">God First. Legacy Always.</p>
           </div>
           <div>
-            <h4 className="text-sm font-semibold uppercase tracking-wider text-gold">
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-gold">
               Explore
-            </h4>
+            </h3>
             <ul className="mt-4 space-y-2 text-sm text-white/80">
               <li><Link to="/about" className="hover:text-gold">About Us</Link></li>
               <li><Link to="/services" className="hover:text-gold">Services</Link></li>
@@ -32,9 +32,9 @@ export function SiteFooter() {
             </ul>
           </div>
           <div>
-            <h4 className="text-sm font-semibold uppercase tracking-wider text-gold">
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-gold">
               Contact
-            </h4>
+            </h3>
             <ul className="mt-4 space-y-4 text-sm text-white/80">
               <li>
                 <div className="text-xs uppercase tracking-wider text-gold/80">Director — Jonathan K. Kiplagat</div>

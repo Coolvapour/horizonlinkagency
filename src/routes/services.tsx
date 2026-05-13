@@ -6,7 +6,7 @@ import { GraduationCap, Briefcase, FileCheck, Plane, BookOpen, Users, ArrowRight
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Services — Study Abroad & Skilled Migration | Horizon Link Agency" },
+      { title: "Our Services — Study Abroad & Skilled Migration" },
       { name: "description", content: "Study abroad & skilled migration services: university admissions, scholarships, student visas, work permits, job placement and settlement support." },
       { property: "og:title", content: "Our Services — Horizon Link Agency" },
       { property: "og:description", content: "Study abroad and skilled migration pathways across Canada, UK, USA, Australia, Europe & Asia." },

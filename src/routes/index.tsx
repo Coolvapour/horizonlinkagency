@@ -21,12 +21,12 @@ import { GraduationCap, Briefcase, Globe2, ShieldCheck, ArrowRight, Plane } from
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Horizon Link Agency — Study Abroad & Migration Consultancy in Kenya" },
+      { title: "Horizon Link Agency — Study Abroad & Migration" },
       { name: "description", content: "Trusted study abroad, scholarships, student visas & skilled migration to Canada, UK, USA, Australia, Europe & Asia. Eldoret-based agency for African families." },
-      { property: "og:title", content: "Horizon Link Agency — Study Abroad & Skilled Migration" },
+      { property: "og:title", content: "Horizon Link Agency — Study Abroad & Migration" },
       { property: "og:description", content: "From Sacrifice to Success — global study and migration pathways for African families." },
       { property: "og:url", content: "https://horizonlinkagency.com/" },
-      { property: "og:image", content: "/students-graduation.jpg" },
+      { property: "og:image", content: "https://horizonlinkagency.com/students-graduation.jpg" },
     ],
     links: [{ rel: "canonical", href: "https://horizonlinkagency.com/" }],
     scripts: [
@@ -84,6 +84,7 @@ function Hero() {
             <span className="text-gold">From Sacrifice</span>
             <br />
             to Success.
+            <span className="sr-only"> — Study Abroad & Migration Consultancy</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg text-white/80">
             We turn the sacrifices of African parents into global opportunities for
@@ -125,7 +126,7 @@ function Pillars() {
               <Icon className="h-6 w-6" />
             </div>
             <div>
-              <h3 className="font-display text-xl text-navy">{title}</h3>
+              <h2 className="font-display text-xl text-navy">{title}</h2>
               <p className="mt-1 text-sm text-muted-foreground">{text}</p>
             </div>
           </div>
