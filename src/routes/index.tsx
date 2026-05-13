@@ -21,12 +21,12 @@ import { GraduationCap, Briefcase, Globe2, ShieldCheck, ArrowRight, Plane } from
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Horizon Link Agency — Study Abroad & Migration Consultancy in Kenya" },
+      { title: "Horizon Link Agency — Study Abroad & Migration" },
       { name: "description", content: "Trusted study abroad, scholarships, student visas & skilled migration to Canada, UK, USA, Australia, Europe & Asia. Eldoret-based agency for African families." },
-      { property: "og:title", content: "Horizon Link Agency — Study Abroad & Skilled Migration" },
+      { property: "og:title", content: "Horizon Link Agency — Study Abroad & Migration" },
       { property: "og:description", content: "From Sacrifice to Success — global study and migration pathways for African families." },
       { property: "og:url", content: "https://horizonlinkagency.com/" },
-      { property: "og:image", content: "/students-graduation.jpg" },
+      { property: "og:image", content: "https://horizonlinkagency.com/students-graduation.jpg" },
     ],
     links: [{ rel: "canonical", href: "https://horizonlinkagency.com/" }],
     scripts: [

@@ -10,12 +10,12 @@ import { Heart, Compass, Award, Eye } from "lucide-react";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Horizon Link Agency — Faith-Driven Migration & Education" },
+      { title: "About Horizon Link Agency — Faith-Driven Consultancy" },
       { name: "description", content: "Learn about Horizon Link Agency: faith-driven migration & education consultancy in Eldoret, Kenya, founded by Jonathan K. Kiplagat to serve African families." },
       { property: "og:title", content: "About Horizon Link Agency" },
       { property: "og:description", content: "God First. Legacy Always. — Our story, mission and values." },
       { property: "og:url", content: "https://horizonlinkagency.com/about" },
-      { property: "og:image", content: "/students-graduation.jpg" },
+      { property: "og:image", content: "https://horizonlinkagency.com/students-graduation.jpg" },
     ],
     links: [{ rel: "canonical", href: "https://horizonlinkagency.com/about" }],
   }),
