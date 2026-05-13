@@ -49,8 +49,19 @@ export function SiteFooter() {
             </ul>
           </div>
         </div>
-        <div className="mt-12 border-t border-white/10 pt-6 text-center text-xs text-white/50">
-          © {new Date().getFullYear()} Horizon Link Agency. All rights reserved.
+        <div className="mt-12 flex flex-col items-center gap-2 border-t border-white/10 pt-6 text-center text-xs text-white/50">
+          <div>© {new Date().getFullYear()} Horizon Link Agency. All rights reserved.</div>
+          <div>
+            Developed by{" "}
+            <a
+              href="https://rimotechnologies.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gold hover:underline"
+            >
+              RiMo Technologies
+            </a>
+          </div>
         </div>
       </div>
     </footer>
