@@ -25,7 +25,7 @@ export const Route = createFileRoute("/contact")({
           "@id": "https://horizonlinkagency.com/contact#contactpage",
           url: "https://horizonlinkagency.com/contact",
           name: "Contact Horizon Link Agency",
-          description: "Get in touch with Horizon Link Agency for study abroad and skilled migration consultations.",
+          description: "Get in touch with Horizon Link Agency for study abroad consultations.",
           inLanguage: "en",
           isPartOf: { "@type": "WebSite", url: "https://horizonlinkagency.com/", name: "Horizon Link Agency" },
           about: { "@id": "https://horizonlinkagency.com/#organization" },
@@ -68,8 +68,7 @@ export const Route = createFileRoute("/contact")({
             ],
             makesOffer: [
               { "@type": "Offer", itemOffered: { "@type": "Service", name: "Study Abroad & Education", url: "https://horizonlinkagency.com/services" } },
-              { "@type": "Offer", itemOffered: { "@type": "Service", name: "Work & Skilled Migration", url: "https://horizonlinkagency.com/services" } },
-              { "@type": "Offer", itemOffered: { "@type": "Service", name: "General Consultation", description: "For families still exploring options across study and migration pathways." } },
+              { "@type": "Offer", itemOffered: { "@type": "Service", name: "General Consultation", description: "For families exploring study abroad options." } },
             ],
           },
         }),
@@ -195,7 +194,6 @@ function ContactPage() {
                 <label htmlFor="contact-service" className="text-xs font-semibold uppercase tracking-wider text-navy">Service of Interest</label>
                 <select id="contact-service" name="service" className="mt-2 w-full rounded-md border border-input bg-background px-3 py-2.5 text-sm focus:border-gold focus:outline-none focus:ring-1 focus:ring-gold">
                   <option>Study Abroad & Education</option>
-                  <option>Work & Skilled Migration</option>
                   <option>Not sure yet</option>
                 </select>
               </div>
