@@ -11,7 +11,7 @@ export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
       { title: "About Horizon Link Agency — Faith-Driven Consultancy" },
-      { name: "description", content: "Learn about Horizon Link Agency: faith-driven migration & education consultancy in Eldoret, Kenya, founded by Jonathan K. Kiplagat to serve African families." },
+      { name: "description", content: "Learn about Horizon Link Agency: faith-driven education consultancy in Eldoret, Kenya, founded by Jonathan K. Kiplagat to serve African families." },
       { property: "og:title", content: "About Horizon Link Agency" },
       { property: "og:description", content: "God First. Legacy Always. — Our story, mission and values." },
       { property: "og:url", content: "https://horizonlinkagency.com/about" },
@@ -29,7 +29,7 @@ export const Route = createFileRoute("/about")({
           url: "https://horizonlinkagency.com/",
           logo: "https://horizonlinkagency.com/favicon.ico",
           image: "https://horizonlinkagency.com/students-graduation.jpg",
-          description: "Faith-driven study abroad and skilled migration consultancy based in Eldoret, Kenya, founded by Jonathan K. Kiplagat to serve African families.",
+          description: "Faith-driven study abroad consultancy based in Eldoret, Kenya, founded by Jonathan K. Kiplagat to serve African families.",
           slogan: "By Grace, From Sacrifice to Success.",
           founder: { "@type": "Person", name: "Jonathan K. Kiplagat", jobTitle: "Founder & Director" },
           foundingLocation: { "@type": "Place", name: "Eldoret, Kenya" },
@@ -83,8 +83,7 @@ function AboutPage() {
               Horizon Link Agency was founded on a simple
               conviction: every African parent's sacrifice deserves a future worth fighting for.
               We exist to bridge the distance between hard-won dreams and global opportunity —
-              guiding students and skilled professionals through study, work, and migration
-              pathways with integrity, faith, and unwavering care.
+              guiding students through study abroad pathways with integrity, faith, and unwavering care.
             </p>
             <p className="mt-4 text-muted-foreground">
               From the first consultation to safe arrival abroad, we walk every step alongside
@@ -160,7 +159,7 @@ const ABOUT_FAQS = [
   },
   {
     q: "What does Horizon Link Agency actually do?",
-    a: "We are a faith-driven study abroad and skilled migration consultancy. We guide students and skilled professionals through university admissions, scholarships, student visas, work permits, job placement and settlement support across 10+ destination countries.",
+    a: "We are a faith-driven study abroad consultancy. We guide students through university admissions, scholarships, student visas and settlement support across 10+ destination countries.",
   },
   {
     q: "Is Horizon Link Agency a registered Kenyan company?",
@@ -168,7 +167,7 @@ const ABOUT_FAQS = [
   },
   {
     q: "What does \"By Grace, From Sacrifice to Success\" mean?",
-    a: "It is our promise to every family we serve. We believe African parents make extraordinary sacrifices, and our role is to convert those sacrifices into real, measurable success — admission letters, visas, jobs and graduations — by God's grace.",
+    a: "It is our promise to every family we serve. We believe African parents make extraordinary sacrifices, and our role is to convert those sacrifices into real, measurable success — admission letters, visas and graduations — by God's grace.",
   },
   {
     q: "Do I have to be a Christian to work with Horizon Link Agency?",

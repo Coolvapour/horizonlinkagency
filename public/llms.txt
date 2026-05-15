@@ -1,15 +1,15 @@
 # Horizon Link Agency
 
-> Faith-driven study abroad and skilled migration consultancy based in Eldoret, Kenya, helping African families access global education and work opportunities.
+> Faith-driven study abroad consultancy based in Eldoret, Kenya, helping African families access global education opportunities.
 
-Horizon Link Agency, founded by Jonathan K. Kiplagat, guides students and skilled professionals through university admissions, scholarships, student visas, work permits and settlement support across 25+ destination countries. Motto: "By Grace, From Sacrifice to Success."
+Horizon Link Agency, founded by Jonathan K. Kiplagat, guides students through university admissions, scholarships, student visas and settlement support across 10 destination countries. Motto: "By Grace, From Sacrifice to Success."
 
 ## Pages
 
 - [Home](/): Overview of services, destinations and the Horizon Link journey.
 - [About](/about): Story, mission, vision and values of the agency.
-- [Services](/services): Study abroad and skilled migration service catalogue.
-- [Destinations](/destinations): All 10 study and work destinations.
+- [Services](/services): Study abroad service catalogue.
+- [Destinations](/destinations): All 10 study destinations.
 - [Contact](/contact): Phones, email, office location and inquiry form.
 
 ## Destinations

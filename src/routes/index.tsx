@@ -16,15 +16,15 @@ import studentsGraduation from "@/assets/students-graduation.jpg";
 import studentsTravel from "@/assets/students-travel.jpg";
 import studentsCampus from "@/assets/students-campus.jpg";
 import consultation from "@/assets/consultation.jpg";
-import { GraduationCap, Briefcase, Globe2, ShieldCheck, ArrowRight, Plane } from "lucide-react";
+import { GraduationCap, Globe2, ShieldCheck, ArrowRight, Plane, BookOpen, FileCheck, Users } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Horizon Link Agency — Study Abroad & Migration" },
-      { name: "description", content: "Trusted study abroad, scholarships, student visas & skilled migration to Canada, UK, USA, Australia, Europe & Asia. Eldoret-based agency for African families." },
-      { property: "og:title", content: "Horizon Link Agency — Study Abroad & Migration" },
-      { property: "og:description", content: "From Sacrifice to Success — global study and migration pathways for African families." },
+      { title: "Horizon Link Agency — Study Abroad Consultancy" },
+      { name: "description", content: "Trusted study abroad, scholarships and student visas to Canada, UK, USA, Australia, Europe & Asia. Eldoret-based agency for African families." },
+      { property: "og:title", content: "Horizon Link Agency — Study Abroad Consultancy" },
+      { property: "og:description", content: "From Sacrifice to Success — global study pathways for African families." },
       { property: "og:url", content: "https://horizonlinkagency.com/" },
       { property: "og:image", content: "https://horizonlinkagency.com/students-graduation.jpg" },
     ],
@@ -41,7 +41,7 @@ export const Route = createFileRoute("/")({
           url: "https://horizonlinkagency.com/",
           logo: "https://horizonlinkagency.com/favicon.ico",
           image: "https://horizonlinkagency.com/students-graduation.jpg",
-          description: "Faith-driven study abroad and skilled migration consultancy helping African families access global education and work opportunities.",
+          description: "Faith-driven study abroad consultancy helping African families access global education opportunities.",
           slogan: "By Grace, From Sacrifice to Success.",
           founder: { "@type": "Person", name: "Jonathan K. Kiplagat", jobTitle: "Founder & Director" },
           email: "info@horizonlinkagency.com",
@@ -97,8 +97,7 @@ function Hero() {
           </h1>
           <p className="mt-6 max-w-xl text-lg text-white/80">
             We turn the sacrifices of African parents into global opportunities for
-            their children — opening doors to world-class education and skilled
-            migration pathways.
+            their children — opening doors to world-class education abroad.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <Link
@@ -238,14 +237,24 @@ function JourneyGallery() {
 function ServicesPreview() {
   const services = [
     {
-      icon: GraduationCap,
-      title: "Study Abroad & Education",
-      text: "University placement, scholarships, student visas, and arrival support.",
+      icon: BookOpen,
+      title: "University Admissions",
+      text: "Course matching and applications to leading universities and colleges worldwide.",
     },
     {
-      icon: Briefcase,
-      title: "Work & Skilled Migration",
-      text: "Skilled worker visas, work permits, and international job placement.",
+      icon: FileCheck,
+      title: "Scholarships & Funding",
+      text: "Identifying scholarships, grants and tuition support tailored to your profile.",
+    },
+    {
+      icon: Plane,
+      title: "Student Visas",
+      text: "Complete visa documentation, interview prep and submission support.",
+    },
+    {
+      icon: Users,
+      title: "Pre-Departure & Settlement",
+      text: "Briefings, accommodation, airport pickup and orientation in your destination country.",
     },
   ];
   return (
@@ -260,7 +269,7 @@ function ServicesPreview() {
             View all services →
           </Link>
         </div>
-        <div className="mt-12 grid gap-6 md:grid-cols-2">
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {services.map(({ icon: Icon, title, text }) => (
             <div key={title} className="group relative overflow-hidden rounded-2xl border border-border bg-card p-8 transition-all hover:border-gold hover:shadow-elegant">
               <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-gold/5 transition-transform group-hover:scale-150" />
