@@ -60,7 +60,10 @@ export const Route = createFileRoute("/destinations_/$slug")({
       <SiteHeader />
       <div className="mx-auto max-w-3xl p-10 text-center">
         <h1 className="font-display text-3xl">Something went wrong</h1>
-        <p className="mt-2 text-muted-foreground">{error.message}</p>
+        <p className="mt-2 text-muted-foreground">Unable to load this destination. Please try again.</p>
+        {import.meta.env.DEV && error.message && (
+          <pre className="mt-4 overflow-auto rounded bg-muted p-3 text-left text-xs">{error.message}</pre>
+        )}
         <Link to="/destinations" className="mt-6 inline-flex text-gold underline">
           Back to destinations
         </Link>
