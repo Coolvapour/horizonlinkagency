@@ -90,14 +90,12 @@ function ServicesPage() {
       {groups.map(({ title, icon: Icon, intro, items }) => (
         <section key={title} className="border-b border-border py-20 last:border-0">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="flex items-start gap-4">
-              <div className="flex h-14 w-14 flex-none items-center justify-center rounded-2xl bg-gold/15 text-navy">
+            <div className="flex flex-col items-center text-center">
+              <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gold/15 text-navy">
                 <Icon className="h-7 w-7" />
               </div>
-              <div>
-                <h2 className="font-display text-3xl text-navy sm:text-4xl">{title}</h2>
-                <p className="mt-2 max-w-2xl text-muted-foreground">{intro}</p>
-              </div>
+              <h2 className="mt-4 font-display text-3xl text-navy sm:text-4xl">{title}</h2>
+              <p className="mt-2 max-w-2xl text-muted-foreground">{intro}</p>
             </div>
 
             <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
