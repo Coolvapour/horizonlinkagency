@@ -161,14 +161,14 @@ function ProcessPage() {
           className="absolute inset-0 h-full w-full object-cover opacity-25"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-navy-deep via-navy-deep/90 to-navy-deep/60" />
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="relative mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold">
             Our Process
           </p>
-          <h1 className="mt-3 max-w-3xl font-display text-5xl sm:text-6xl">
+          <h1 className="mx-auto mt-3 max-w-3xl font-display text-5xl sm:text-6xl">
             From Zero to Abroad — <span className="text-gold">we guide every step.</span>
           </h1>
-          <p className="mt-5 max-w-2xl text-white/75">
+          <p className="mx-auto mt-5 max-w-2xl text-white/75">
             A clear, four-stage pathway designed for African families. No guesswork,
             no shortcuts — just structured, faith-driven guidance from your first
             question to your first day abroad.
