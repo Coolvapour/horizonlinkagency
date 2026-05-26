@@ -75,12 +75,12 @@ function ServicesPage() {
     <div className="min-h-screen bg-background">
       <SiteHeader />
       <section className="bg-navy py-20 text-white">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold">Services</p>
-          <h1 className="mt-3 max-w-3xl font-display text-5xl sm:text-6xl">
+          <h1 className="mx-auto mt-3 max-w-3xl font-display text-5xl sm:text-6xl">
             End-to-end pathways. <span className="text-gold">Honest counsel.</span>
           </h1>
-          <p className="mt-5 max-w-2xl text-white/75">
+          <p className="mx-auto mt-5 max-w-2xl text-white/75">
             From admission to arrival, we provide structured, faith-driven guidance
             every step of your global education journey.
           </p>
