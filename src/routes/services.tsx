@@ -75,12 +75,12 @@ function ServicesPage() {
     <div className="min-h-screen bg-background">
       <SiteHeader />
       <section className="bg-navy py-20 text-white">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold">Services</p>
-          <h1 className="mt-3 max-w-3xl font-display text-5xl sm:text-6xl">
+          <h1 className="mx-auto mt-3 max-w-3xl font-display text-5xl sm:text-6xl">
             End-to-end pathways. <span className="text-gold">Honest counsel.</span>
           </h1>
-          <p className="mt-5 max-w-2xl text-white/75">
+          <p className="mx-auto mt-5 max-w-2xl text-white/75">
             From admission to arrival, we provide structured, faith-driven guidance
             every step of your global education journey.
           </p>
@@ -90,14 +90,12 @@ function ServicesPage() {
       {groups.map(({ title, icon: Icon, intro, items }) => (
         <section key={title} className="border-b border-border py-20 last:border-0">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="flex items-start gap-4">
-              <div className="flex h-14 w-14 flex-none items-center justify-center rounded-2xl bg-gold/15 text-navy">
+            <div className="flex flex-col items-center text-center">
+              <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gold/15 text-navy">
                 <Icon className="h-7 w-7" />
               </div>
-              <div>
-                <h2 className="font-display text-3xl text-navy sm:text-4xl">{title}</h2>
-                <p className="mt-2 max-w-2xl text-muted-foreground">{intro}</p>
-              </div>
+              <h2 className="mt-4 font-display text-3xl text-navy sm:text-4xl">{title}</h2>
+              <p className="mt-2 max-w-2xl text-muted-foreground">{intro}</p>
             </div>
 
             <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">

@@ -260,12 +260,10 @@ function ServicesPreview() {
   return (
     <section className="py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col items-end justify-between gap-6 md:flex-row">
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold">What we do</p>
-            <h2 className="mt-3 font-display text-4xl text-navy sm:text-5xl">Pathways We Build</h2>
-          </div>
-          <Link to="/services" className="text-sm font-semibold text-navy hover:text-gold">
+        <div className="text-center">
+          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold">What we do</p>
+          <h2 className="mt-3 font-display text-4xl text-navy sm:text-5xl">Pathways We Build</h2>
+          <Link to="/services" className="mt-4 inline-block text-sm font-semibold text-navy hover:text-gold">
             View all services →
           </Link>
         </div>
