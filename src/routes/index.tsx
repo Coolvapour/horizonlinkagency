@@ -84,7 +84,7 @@ function Hero() {
         <div className="absolute inset-0 bg-gradient-to-r from-navy-deep via-navy-deep/85 to-navy-deep/40" />
       </div>
       <div className="relative mx-auto max-w-7xl px-4 py-24 sm:px-6 sm:py-32 lg:px-8 lg:py-40">
-        <div className="max-w-2xl">
+        <div className="mx-auto max-w-3xl text-center">
           <div className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-white/5 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.2em] text-gold">
             God First · Legacy Always
           </div>
@@ -95,11 +95,11 @@ function Hero() {
             to Success.
             <span className="sr-only"> — Study Abroad & Migration Consultancy</span>
           </h1>
-          <p className="mt-6 max-w-xl text-lg text-white/80">
+          <p className="mx-auto mt-6 max-w-xl text-lg text-white/80">
             We turn the sacrifices of African parents into global opportunities for
             their children — opening doors to world-class education abroad.
           </p>
-          <div className="mt-10 flex flex-wrap gap-4">
+          <div className="mt-10 flex flex-wrap justify-center gap-4">
             <Link
               to="/contact"
               className="inline-flex items-center gap-2 rounded-full bg-gold-gradient px-7 py-3.5 text-sm font-semibold text-navy-deep shadow-gold transition-transform hover:scale-[1.02]"
@@ -115,6 +115,7 @@ function Hero() {
           </div>
         </div>
       </div>
+
     </section>
   );
 }
